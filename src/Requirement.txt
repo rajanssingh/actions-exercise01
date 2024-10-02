@@ -1,0 +1,7 @@
+1. Lint, Test & Deploy on "push"
+    i. Run the "lint", "test" & "build" scripts
+    ii. Use one or three jobs (running after each other)
+
+2. Output Event Details on "issues"
+    i. Output event details in the shell via "echo"
+    ii. Use the "issues" event & "github" context
