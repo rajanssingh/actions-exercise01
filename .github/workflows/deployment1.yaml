@@ -1,4 +1,4 @@
-name: deployment_01Job
+name: deploymentSingleJob
 on: push
 jobs:
   deploy_job:
