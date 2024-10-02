@@ -11,6 +11,8 @@ jobs:
       - name: Lint
         run: npm run lint
   test:
+    # test runs after lint job
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
@@ -20,6 +22,7 @@ jobs:
       - name: Test code
         run: npm test
   deploy:
+    # runs parallel by default
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
